@@ -27,20 +27,27 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.projects}>
-          <div>
+          <div className={styles.projectsItem}>
             <div>
-              Cocreación de proyectos digitales centrados en las personas
-            </div>
-            <div>
-              Nos especializamos en educación, igualdad de género y reducción de
-              desigualdades.
+              <div className={styles.title}>
+                Cocreación de proyectos digitales centrados en las personas
+              </div>
+              <div className={styles.description}>
+                Nos especializamos en educación, igualdad de género y reducción
+                de desigualdades.
+              </div>
             </div>
           </div>
-          <div>
-            <div>Programas educativos de transformación digital</div>
+          <div className={styles.projectsItem}>
+            <div></div>
             <div>
-              Aprende haciendo. Todos nuestros cursos se centran en ser
-              prácticos y de aplicación rápida.
+              <div className={styles.title}>
+                Programas educativos de transformación digital
+              </div>
+              <div className={styles.description}>
+                Aprende haciendo. Todos nuestros cursos se centran en ser
+                prácticos y de aplicación rápida.
+              </div>
             </div>
           </div>
         </div>

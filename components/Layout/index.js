@@ -24,10 +24,10 @@ export default function Layout({ children }) {
         ref={ref}
       >
         <div>
-          <h1 className={styles.title}>
-            {/* <Link href="/">
+          <h1 className={styles.logo}>
+            <Link href="/">
               <a>Posible.</a>
-            </Link> */}
+            </Link>
           </h1>
         </div>
         <div className={styles.nav}>
@@ -36,8 +36,8 @@ export default function Layout({ children }) {
               <a>Nuestros proyectos</a>
             </Link>
           </nav>
-          <div className={styles.cta}>Contáctanos</div>
         </div>
+        <div className={styles.cta}>Contáctanos</div>
       </div>
       <div>{children}</div>
     </>
