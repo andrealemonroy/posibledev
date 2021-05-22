@@ -1,11 +1,18 @@
+@font-face {
+  font-family: "Poppins-SB";
+  src: url("../public/fonts/Poppins/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("../public/fonts/Poppins/Poppins-Light.ttf");
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  font-family: "Poppins-SB" !important;
 }
 
 .main {
@@ -17,6 +24,111 @@
   align-items: center;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+}
+
+.cta {
+  width: 180px;
+  height: 56px;
+  border-radius: 6px;
+  background-color: #0038ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: none;
+    transform: none;
+  }
+  80% {
+    opacity: 0;
+    -webkit-transform: translate3d(-40%, 0, 0);
+    transform: translate3d(-40%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .headlineLogo{
+    animation: bounceIn 3s
+  }
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  font-size: 82px;
+  line-height: 76px;
+  margin-top: 60px;
+}
+.headlineLogo {
+  font-size: 82px;
+  line-height: 76px;
+  text-align: center;
+  color: #ff7f00;
+}
+.headlineContainer {
+  animation: bounceIn 2s;
+}
+.subheadline {
+  font-family: "Poppins-Light";
+  font-size: 28px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 24px;
+  animation: fadeInLeft 3s;
+}
 .footer {
   width: 100%;
   height: 100px;
@@ -31,6 +143,10 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+}
+
+.projects{
+  height: 80vh;
 }
 
 .title a {
